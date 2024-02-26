@@ -93,4 +93,37 @@ section {
     bottom: 30vh;
 
 }
+.result_container {
+    bottom: 20vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
 
+}
+
+.card {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-family: 'Bona Nova';
+}
+.myPlants_title {
+    font-size: 2vw;
+    font-family: 'Love Ya Like A Sister';
+    color: #457925;
+    margin: 20px;
+}

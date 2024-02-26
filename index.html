@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="./css/index.css">
         <link href='https://fonts.googleapis.com/css?family=Love Ya Like A Sister' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Bona Nova' rel='stylesheet'>
       </head>
     <body>
         <header>
@@ -19,16 +20,36 @@
                     </nav>
                 </div>
             </div>
-            <button class="scanBtn" onclick="location.href='#Home'"> Scan Plant</button>
+            <!-- <label for="imageInput" class="uploadBtn">Upload Image</label> -->
+            <input type="file" id="imageInput" style="display: none;" accept="image/*"/>
+            <!-- <div id="imagePreview"></div>-->
+            <button class="scanBtn" onclick="uploadImg()">Scan Plant</button> 
+            <div id="resultContainer" class="result_container"></div>
+
         </header>
-        <div class="main_container">
-            <div class="main_content">
-                <div class="main_title">
-                    <h1>LeafLife</h1>
+        <div class="myPlants_container">
+            <div class="myPlants_title">
+                <h2>My Plants</h2>
+            </div>
+            <div class="card">
+                <div class="card_img">
+                    <img src="./assets/plant.svg" alt="plant1">
                 </div>
-                <div class="main_text">
-                    <p>LeafLife is a plant identification app that allows you to identify plants by taking a picture of the plant. The app will then use the picture to identify the plant and provide you with information about the plant. The app will also allow you to save the plant to your account and keep track of the plants you have identified. </p>
+                <div class="card_name">
+                    <h3>Mother-in-law's Tongue</h3>
+                    <p>Sansevieria trifasciata</p>
+                </div>
+                <div class="card_info">
+                    <p><strong>Light:</strong> Bright, indirect light.</p>
+                    <p><strong>Temperature:</strong> 18°C to 27°C.</p>
+                </div>
+                <div class="buttons">
+                    <button class="waterBtn" onclick="location.href='#Home'"> Water</button>
+                    <button class="editBtn" onclick="location.href='#Home'"> Edit</button>
+                    <button class="chatBtn" onclick="location.href='#Home'"> Chat</button>
                 </div>
             </div>
+        </div>
+        <script src="./js/scan.js"></script>
     </body>
 </html>
